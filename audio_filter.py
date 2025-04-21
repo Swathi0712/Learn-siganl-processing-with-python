@@ -47,7 +47,7 @@ class AudioFilter:
             self.timeAxis = np.linspace(0,self.duration,len(self.audioData))
             
         except Exception as e:
-            print(f"error")
+            print(f"error from load audio{e}")
             return False
         
         return True
